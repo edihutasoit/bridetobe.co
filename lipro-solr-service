@@ -1,0 +1,18 @@
+# service name
+spring.application.name=lipro-solr-service
+
+# service port
+server.port=8100
+
+# eureka server url at localhost
+eureka.client.service-url.defaultZone=http://192.168.99.100:8761/eureka/
+eureka.client.register-with-eureka=true
+spring.cloud.discovery.enabled=true
+eureka.instance.prefer-ip-address=true
+
+# Solr Client Host
+solr.client.host=http://localhost:8983/solr/
+solr.save.duration=3000
+
+# Solr Service Query
+Venue.findByNamedQuery=id:*?0* OR name:*?0*
